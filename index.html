@@ -1,5 +1,7 @@
 <!doctype html>
 <html lang="en">
+  <!-- #region Page metadata and assets -->
+  <!-- MARK: Page metadata and assets -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,11 +11,17 @@
     <link rel="stylesheet" href="style.css">
     <script src="main.js" defer></script>
   </head>
+  <!-- #endregion Page metadata and assets -->
   <body>
-    <header class="header"><a class="wordmark" href="#" aria-label="Malibooze home">malibooze<span>✳</span></a>
+    <!-- #region Header and navigation -->
+    <!-- MARK: Header and navigation -->
+    <header class="header"><a class="wordmark" href="#" aria-label="Malibooze home">malibooze<span class="drink-icon wine-icon" aria-hidden="true"></span></a>
       <nav aria-label="Main navigation"><a href="#stores">Our stores</a><a href="#good-spirits">Good spirits</a><a class="nav-button" href="#stores">Find your store <span>↗</span></a></nav>
     </header>
+    <!-- #endregion Header and navigation -->
     <main>
+      <!-- #region Hero and mascot -->
+      <!-- MARK: Hero and mascot -->
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy">
           <p class="eyebrow"><span></span> THREE STORES. PLENTY OF PERSONALITY.</p>
@@ -24,14 +32,20 @@
         <div class="hero-art">
           <div class="art-top">THE MALIBOOZE STATE OF MIND</div>
           <div class="orbit orbit-one"></div>
-          <div class="orbit orbit-two"></div><span class="spark spark-one">✳</span><span class="spark spark-two">✦</span>
+          <div class="orbit orbit-two"></div><span class="hero-drink hero-drink-one drink-icon wine-icon" aria-hidden="true"></span><span class="hero-drink hero-drink-two drink-icon bottle-icon" aria-hidden="true"></span>
           <div class="mascot"><img src="maliboozeLogo.jpg" alt="Malibooze schnauzer mascot with a martini"></div>
           <div class="art-label label-one">A LITTLE<br>MORE SPIRIT.</div>
           <div class="art-label label-two">GOOD COMPANY<br>STARTS HERE ↗</div>
-          <div class="art-bottom"><span>MAKE IT A MALIBOOZE MOMENT</span><span>✳</span></div>
+          <div class="art-bottom"><span>MAKE IT A MALIBOOZE MOMENT</span><span class="drink-icon wine-icon" aria-hidden="true"></span></div>
         </div>
       </section>
-      <div class="ticker" aria-hidden="true"><span>GOOD SPIRITS</span> ✳ <span>GREAT COMPANY</span> ✳ <span>THREE LOCAL STOPS</span> ✳ <span>GOOD SPIRITS</span> ✳ <span>GREAT COMPANY</span> ✳</div>
+      <!-- #endregion Hero and mascot -->
+      <!-- #region Wine and spirits ticker -->
+      <!-- MARK: Wine and spirits ticker -->
+      <div class="ticker" aria-hidden="true"><span>GOOD SPIRITS</span> <i class="drink-icon wine-icon"></i> <span>GREAT COMPANY</span> <i class="drink-icon wine-icon"></i> <span>THREE LOCAL STOPS</span> <i class="drink-icon wine-icon"></i> <span>GOOD SPIRITS</span> <i class="drink-icon wine-icon"></i> <span>GREAT COMPANY</span> <i class="drink-icon wine-icon"></i></div>
+      <!-- #endregion Wine and spirits ticker -->
+      <!-- #region Store locations and contact details -->
+      <!-- MARK: Store locations and contact details -->
       <section class="stores section" id="stores">
         <div class="section-heading">
           <div>
@@ -41,24 +55,27 @@
           <p>Find us in Kingsville, Texas.<br>Get directions or give your store a call.</p>
         </div>
         <div class="store-grid">
+          <!-- MARK: Malibooze store card -->
           <article class="store-card malibu">
-            <div class="store-visual"><span class="store-number">01 / THE MALIBOOZE PERSONALITY</span><img src="maliboozeLogo.jpg" alt="Malibooze logo" loading="lazy"><span class="visual-star">✳</span></div>
+            <div class="store-visual"><span class="store-number">01 / THE MALIBOOZE PERSONALITY</span><img src="maliboozeLogo.jpg" alt="Malibooze logo" loading="lazy"><span class="store-drink drink-icon bottle-icon" aria-hidden="true"></span></div>
             <div class="store-info">
               <h3>Malibooze</h3>
               <p>A little playful. A lot of personality.</p>
               <address class="store-address">1701 Brahma Blvd, Suite D<br>Kingsville, TX 78363</address><a class="store-phone" href="tel:+13612218118" aria-label="Call Malibooze at (361) 221-8118">(361) 221-8118</a><a class="directions-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=1701+Brahma+Blvd%2C+Suite+D%2C+Kingsville%2C+TX+78363" target="_blank" rel="noopener noreferrer" aria-label="Get Google Maps directions to Malibooze">Get directions <span aria-hidden="true">↗</span></a><a class="store-link" data-store="malibooze" href="https://www.facebook.com/maliboozeliquortx" target="_blank" rel="noopener noreferrer">Visit Facebook <span>↗</span></a>
             </div>
           </article>
+          <!-- MARK: Discount Liquor store card -->
           <article class="store-card discount">
-            <div class="store-visual"><span class="store-number">02 / A NAME YOU KNOW</span><img src="discountLogo.png" alt="Discount Liquor logo" loading="lazy"><span class="visual-star">✳</span></div>
+            <div class="store-visual"><span class="store-number">02 / A NAME YOU KNOW</span><img src="discountLogo.png" alt="Discount Liquor logo" loading="lazy"><span class="store-drink drink-icon bottle-icon" aria-hidden="true"></span></div>
             <div class="store-info">
               <h3>Discount Liquor</h3>
               <p>Your next stop starts right here.</p>
               <address class="store-address">626 N 14th St<br>Kingsville, TX 78363</address><a class="store-phone" href="tel:+13615926333" aria-label="Call Discount Liquor at (361) 592-6333">(361) 592-6333</a><a class="directions-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=626+N+14th+St%2C+Kingsville%2C+TX+78363" target="_blank" rel="noopener noreferrer" aria-label="Get Google Maps directions to Discount Liquor">Get directions <span aria-hidden="true">↗</span></a><a class="store-link" data-store="discount" href="https://www.facebook.com/DiscountLiquorTX" target="_blank" rel="noopener noreferrer">Visit Facebook <span>↗</span></a>
             </div>
           </article>
+          <!-- MARK: University Liquor store card -->
           <article class="store-card university">
-            <div class="store-visual"><span class="store-number">03 / SCHOOL SPIRIT, MEET GOOD SPIRITS</span><img src="universityLogo.jpg" alt="University Liquor logo" loading="lazy"><span class="visual-star">✳</span></div>
+            <div class="store-visual"><span class="store-number">03 / SCHOOL SPIRIT, MEET GOOD SPIRITS</span><img src="universityLogo.jpg" alt="University Liquor logo" loading="lazy"><span class="store-drink drink-icon bottle-icon" aria-hidden="true"></span></div>
             <div class="store-info">
               <h3>University Liquor</h3>
               <p>A store with a spirit all its own.</p>
@@ -67,12 +84,15 @@
           </article>
         </div>
       </section>
+      <!-- #endregion Store locations and contact details -->
+      <!-- #region Good spirits feature -->
+      <!-- MARK: Good spirits feature -->
       <section class="spirit-section section" id="good-spirits">
-        <div class="spirit-art" aria-hidden="true"><span class="big-star">✳</span>
+        <div class="spirit-art" aria-hidden="true"><span class="background-bottle drink-icon bottle-icon"></span>
           <div class="glass">
             <div class="liquid"></div>
             <div class="olive"></div>
-          </div><span class="tiny-star">✧</span>
+          </div><span class="small-wine drink-icon wine-icon"></span>
           <p>HERE’S TO<br><em>good company.</em></p>
         </div>
         <div class="spirit-copy">
@@ -81,6 +101,9 @@
           <p>The best moments don’t all look the same. Neither do our stores. Explore all three and find the one that feels like your kind of place.</p><a class="text-link" href="#stores">Find your kind of spirit <span>↗</span></a>
         </div>
       </section>
+      <!-- #endregion Good spirits feature -->
+      <!-- #region Facebook updates -->
+      <!-- MARK: Facebook updates -->
       <section class="updates section" id="updates">
         <div>
           <p class="eyebrow">KEEP IN THE LOOP</p>
@@ -89,10 +112,14 @@
         </div>
         <div class="updates-list" id="social-links"><a class="social-row" href="https://www.facebook.com/maliboozeliquortx" target="_blank" rel="noopener noreferrer">Malibooze <span>↗</span></a><a class="social-row" href="https://www.facebook.com/DiscountLiquorTX" target="_blank" rel="noopener noreferrer">Discount Liquor <span>↗</span></a><a class="social-row" href="https://www.facebook.com/profile.php?id=61582010642465" target="_blank" rel="noopener noreferrer">University Liquor <span>↗</span></a></div>
       </section>
+      <!-- #endregion Facebook updates -->
     </main>
-    <footer><a class="wordmark" href="#">malibooze<span>✳</span></a>
+    <!-- #region Footer -->
+    <!-- MARK: Footer -->
+    <footer><a class="wordmark" href="#">malibooze<span class="drink-icon wine-icon" aria-hidden="true"></span></a>
       <p>Malibooze · Discount Liquor · University Liquor</p>
       <div class="footer-bottom"><span>© <span id="year">2026</span> Malibooze</span><span>For adults 21+. Please enjoy responsibly.</span><a href="#">Back to top ↑</a></div>
     </footer>
+    <!-- #endregion Footer -->
   </body>
 </html>

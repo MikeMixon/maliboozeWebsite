@@ -1,3 +1,5 @@
+// #region Store Facebook pages
+// MARK: Store Facebook pages
 // Facebook pages supplied in notes.txt, in store order.
 const stores = [
   { id: 'malibooze', name: 'Malibooze', facebook: 'https://www.facebook.com/maliboozeliquortx' },
@@ -5,7 +7,16 @@ const stores = [
   { id: 'university', name: 'University Liquor', facebook: 'https://www.facebook.com/profile.php?id=61582010642465' }
 ];
 
+// #endregion
+
+// #region Footer year
+// MARK: Footer year
 document.getElementById('year').textContent = new Date().getFullYear();
+// #endregion
+
+// #region Facebook links
+// MARK: Facebook links
+// Refresh the static HTML links from the store list above.
 const confirmed = stores.filter(store => /^https:\/\/(www\.)?(facebook\.com|fb\.com)\//i.test(store.facebook));
 if (confirmed.length) {
   const container = document.getElementById('social-links');
@@ -25,3 +36,5 @@ if (confirmed.length) {
     cardLink.firstChild.textContent = 'Visit Facebook ';
   }
 }
+
+// #endregion
